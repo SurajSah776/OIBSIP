@@ -14,16 +14,47 @@
       <h1>Temperature Converter</h1>
 
       <div class="container">
+
+        <!-- From Temperature -->
         <div class="from">
           <h2>From</h2>
+
+          <select name="temp" id="initial">
+            <option value="Celsius" selected>
+              Celsius
+            </option>
+
+            <option value="Fahrenheit">
+              Fahrenheit
+            </option>
+
+            <option value="Kelvin">
+              Kelvin
+            </option>
+          </select>
+
+          <input type="number" placeholder="Input" id="input" />
         </div>
 
+        <!-- To Temperature-->
         <div class="to">
           <h2>To</h2>
+          <select name="temp" id="final">
+            <option value="Fahrenheit" selected>
+              Fahrenheit
+            </option>
+            <option value="Celsius">
+              Celsius
+            </option>
+            <option value="Kelvin">
+              Kelvin
+            </option>
+          </select>
+
+          <div id="output">Result</div>
         </div>
       </div>
-      <button>Convert</button>
-
+      <button id="convert-btn">Convert</button>
     </div>
 
     <!-- Footer -->
@@ -36,8 +67,6 @@
             @SurajSah776
           </a>
         </div>
-
-
 
         <div class="items">
           <img src="./linkedin.svg">

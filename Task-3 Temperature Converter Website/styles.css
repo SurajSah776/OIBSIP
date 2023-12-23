@@ -7,6 +7,7 @@
   font-size: 16px;
   letter-spacing: 0.1px;
   color: white;
+  border-radius: 6px;
 }
 
 body {
@@ -23,49 +24,98 @@ body {
 
 /* Main Container  */
 .wrapper {
-  width: 80%;
-  height: 50%;
+  min-width: 30%;
+  max-width: 50%;
+  min-height: 70%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  padding: 0px 5px;
 }
 
 .box-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-top: 10px;
+  padding: 20px;
+  background: linear-gradient(
+    209deg,
+    rgba(0, 55, 150, 0.562),
+    rgba(0, 40, 57, 0.201),
+    rgba(0, 29, 52, 0.498)
+  );
+  box-shadow: 0px 0px 5px 0.5px rgb(0, 0, 0);
 }
 
 h1 {
   text-align: center;
   font-size: 20px;
   color: rgb(214, 214, 214);
-  padding: 12px;
-  border-bottom: 2px solid cyan;
+  padding: 12px 0px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.85);
+  letter-spacing: 1.1px;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
 }
 
 .from,
 .to {
-  padding: 5px 10px;
+  padding: 20px 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Convert Button */
 button {
   background-color: rgb(53, 53, 255);
-  padding: 6px 10px;
+  padding: 8px 0px;
   border-radius: 6px;
   border: none;
-  margin: 30px;
+  margin: 10px 0px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: bold;
 }
+
 button:hover {
   background-color: rgb(16, 16, 255);
   box-shadow: 0px 0px 5px rgb(41, 41, 41);
+}
+
+/* Drop Down List */
+input,
+#output {
+  width: 250px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  height: 40px;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  color: gray;
+}
+
+select {
+  background-color: rgba(87, 87, 88, 0.959);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 250px;
+  letter-spacing: 1px;
 }
 
 /* Footer Section*/
@@ -81,6 +131,7 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.379);
   width: 100vw;
 }
+
 .links {
   display: flex;
   gap: 1rem;
@@ -95,6 +146,7 @@ button:hover {
   gap: 2px;
   padding: 1.5px;
 }
+
 .footer p {
   padding: 2px 0px 5px;
   font-size: 12px;
