@@ -4,26 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <div class="navBar">
-        <div class="logo">
-            <img src="./assets/logo.jpg" alt="logo">
-        </div>
+    <div class="navigation-ribbon">
+        <div class="navBar">
+            <div class="logo">
+                <img src="./assets/logo.jpg" alt="logo">
+            </div>
 
-        <div class="menu-items">
-            <ul>
-                <li><a href="#aboutMe">Projects</a></li>
-                <li><a href="#aboutMe">Skills</a></li>
-                <li><a href="#aboutMe">Contact Me</a></li>
-            </ul>
-        </div>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
 
+        </div>
     </div>
+
 
     <!-- Main Section -->
     <div class="main-section">
@@ -32,16 +36,18 @@
 
         <div class="left">
             <div class="heading">Hi! Suraj Sah</div>
+
             <div class="sub-heading">
-                I am a <span class="role">Web Developer</span>
+                I am a <span class="role" id="my-role">Web Developer</span>
             </div>
+
             <div class="description">
                 I'm a Web Developer and here is my portfolio website. Here you'll learn about my journey as a Full Stack
                 Web
                 Developer.
             </div>
 
-            <button class="hire-me">Hire Me</button>
+            <button class="modern-button">Hire Me</button>
 
         </div>
 
@@ -52,7 +58,181 @@
         </div>
     </div>
 
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+        <h1 class="project-heading">
+            Projects
+        </h1>
+        <div class="project-container">
+            <div class="project-item project-card1">
+                <div class="project-1">
+                    <div class="content">
+                        <h3 class="project-title">Weather Forecasting</h3>
+                        <p>
+                            <a href="https://github.com/SurajSah776/Current-Weather-Checker" target="_blank"
+                                class="modern-button">View Code
+                                on GitHub <img src="./assets/github.svg" alt=""></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item project-card2">
+                <div class="project-2">
+                    <div class="content">
+                        <h3 class="project-title">Password Generator</h3>
+                        <p>
+                            <a href="https://github.com/SurajSah776/Password-Generator " target="_blank"
+                                class="modern-button">View Code on
+                                GitHub <img src="./assets/github.svg" alt=""></a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item project-card3">
+                <div class="project-3">
+                    <div class="content">
+                        <h3 class="project-title">Microsoft Website Clone</h3>
+                        <p>
+                            <a href="https://github.com/SurajSah776/Microsoft_Website_Clone" target="_blank"
+                                class="modern-button">View Code on
+                                GitHub <img src="./assets/github.svg" alt=""></a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skill-section" id="skills">
+        <div class="skill-text">
+            <div class="skill-heading">
+                Me and My Tech Stack
+            </div>
+            <div class="skill-description">
+                Hi Everyone! My name is Suraj Sah. I am a Full Stack Web Developer.
+            </div>
+        </div>
+
+        <div class="skill-collection">
+            <img src="./assets/HTML.png" alt="">
+            <img src="./assets/CSS.png" alt="">
+            <img src="./assets/Javascript.svg" alt="">
+            <img src="./assets/Tailwind.png" alt="">
+            <img src="./assets/React.png" alt="">
+            <img src="./assets/NodeJs.svg" alt="">
+            <img src="./assets/Express.png" alt="">
+            <img src="./assets/MongoDB.svg" alt="">
+            <img src="./assets/cpp.svg" alt="">
+            <img src="./assets/java.svg" alt="">
+            <img src="./assets/python.svg" alt="">
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact">
+        <h1 class="contact-heading">
+            Contact Me
+        </h1>
+        <div class="contact-container">
+
+            <form class="contact-form">
+                <input type="text" name="user-name" placeholder="Your Name">
+
+                <input type="email" name="email" placeholder="Your Email">
+
+                <textarea name="message" placeholder="Your Message"></textarea>
+
+                <div class="btn-group">
+                    <button type="reset" class="modern-button">Clear</button>
+                    <button type="submit" class="modern-button">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="footer-section">
+
+        <div class="footer-wrapper">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+
+                    <li><a href="#projects">Projects</a></li>
+
+                    <li><a href="#skills">Skills</a></li>
+
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-media-icons">
+                <a href="https://www.linkedin.com/in/suraj-kumar-sah/" target="_blank">
+                    <img src="./assets/linkedin.svg">
+                </a>
+
+                <a href="https://github.com/SurajSah776" target="_blank">
+                    <img src="./assets/github.svg">
+                </a>
+
+                <a href="https://www.instagram.com/surajsah776/" target="_blank">
+                    <img src="./assets/instagram.svg">
+                </a>
+
+                <a href="https://www.facebook.com/surajkr.sah.775" target="_blank">
+                    <img src="./assets/facebook.svg">
+                </a>
+
+                <a href="https://twitter.com/SurajSah776" target="_blank">
+                    <img src="./assets/twitter.svg">
+                </a>
+
+                <a href="https://t.me/SurajSah3469" target="_blank">
+                    <img src="./assets/telegram.svg">
+                </a>
+
+                <a href="https://www.snapchat.com/add/surajsah776" target="_blank">
+                    <img src="./assets/snapchat.svg">
+                </a>
+            </div>
+
+        </div>
+
+        <p class="copyright-text">&copy;Suraj Kumar Sah</p>
+    </div>
+
+
+    <!-- Script -->
     <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role",
+            {
+                strings: [
+                    "Full Stack Developer",
+                    "Web Developer",
+                    "Backend Developer",
+                    "Coder",
+                ],
+                loop: true,
+                typeSpeed: 70,
+                backSpeed: 60,
+                backDe1ay: 1500,
+            });
+    </script>
 
 </body>
 
