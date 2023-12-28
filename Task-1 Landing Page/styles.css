@@ -1,0 +1,52 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+body {
+  background-color: rgb(233, 233, 233);
+}
+
+/* Header/Navigation Section*/
+.header {
+  display: flex;
+  background-color: rgb(53, 53, 53);
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0px 20px;
+}
+
+.header span {
+  color: #2556e9;
+}
+
+.header span:hover {
+  cursor: pointer;
+}
+
+.header ul {
+  display: flex;
+  /* gap: 20px; */
+}
+
+.header ul li {
+  list-style-type: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header ul li:hover {
+  background-color: gray;
+  cursor: pointer;
+}
