@@ -1,36 +1,54 @@
-/* CSS Reset */
+/* CSS Main */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
+  scroll-behavior: smooth;
 }
+
+/* Global Variables */
+:root {
+  --primary-color: rgba(0, 24, 40, 0.92);
+  --secondary-color: rgba(0, 24, 40, 0.4);
+  --clear-button: red;
+  --submit-button: green;
+  --grayColor: gray;
+  --whiteColor: white;
+  --borderRadius: 4px;
+}
+
 body {
-  background-color: rgb(233, 233, 233);
+  background-color: var(--whiteColor);
 }
 
 /* Header/Navigation Section*/
 .header {
+  position: fixed;
+  z-index: 10;
   display: flex;
-  background-color: rgb(53, 53, 53);
+  background-color: var(--primary-color);
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  width: 100%;
   padding: 0px 20px;
 }
 
-.header span {
-  color: #2556e9;
+.header span a {
+  color: #2f63ff;
+  text-decoration: none;
 }
 
-.header span:hover {
+.header span a:hover {
   cursor: pointer;
+  color: rgb(105, 123, 255);
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
 }
 
 .header ul {
   display: flex;
-  /* gap: 20px; */
 }
 
 .header ul li {
@@ -43,10 +61,303 @@ body {
 
 .header ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--whiteColor);
 }
 
 .header ul li:hover {
-  background-color: gray;
+  background-color: var(--grayColor);
   cursor: pointer;
+}
+
+/*  */
+/* Section */
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+  font-size: 18px;
+}
+
+/* Add this CSS to your existing styles.css or create a new stylesheet */
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+#services {
+  background-color: var(--whiteColor);
+}
+
+.service {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.service h3 {
+  color: #333;
+}
+
+.service p {
+  color: #666;
+}
+
+/* Contact Us, Signin, Signup Section */
+.contact-section,
+.signin-section,
+.signup-section,
+.faq-section,
+.about-section {
+  padding: 50px 5px;
+}
+
+.contact-section,
+.signup-section {
+  background-color: var(--secondary-color);
+}
+
+.contact-container,
+.signup-container {
+  background-color: var(--whiteColor);
+}
+
+.contact-container,
+.signin-container,
+.signup-container,
+.faq-container,
+.about-container {
+  margin: 15px auto;
+  width: 50%;
+  box-shadow: 0px 0px 7px black;
+  border-radius: var(--borderRadius);
+}
+
+.contact-heading,
+.signin-heading,
+.signup-heading,
+.faq-heading,
+.about-heading {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: rgb(21, 21, 21);
+  padding-bottom: 5px;
+}
+
+.contact-form,
+.signin-form,
+.signup-form,
+.faq-container,
+.about-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 10px;
+}
+
+input,
+textarea {
+  height: 40px;
+  padding: 5px 10px;
+}
+
+/* Buttons */
+.btn-group {
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-group button {
+  padding: 5px 15px;
+  border: none;
+  color: var(--whiteColor);
+  letter-spacing: 1px;
+  transform: scale(1);
+  transition: all 0.2s;
+  border-radius: var(--borderRadius);
+}
+
+.btn-group button:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 0px 4px black;
+}
+
+.clear-button {
+  background-color: var(--clear-button);
+}
+
+.submit-button {
+  background-color: var(--submit-button);
+}
+
+/* FAQs Section */
+.faq-item {
+  margin-bottom: 20px;
+  border: 1px solid var(--grayColor);
+  border-radius: var(--borderRadius);
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  cursor: pointer;
+  background-color: rgba(230, 230, 230, 0.9);
+  border-radius: var(--borderRadius);
+}
+
+.question {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.toggle-btn {
+  background-color: #3498db;
+  width: 45px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #0055ff;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+  border-top: 1px solid var(--grayColor);
+}
+
+.answer.visible {
+  display: block;
+}
+
+/* About Us Section */
+.about-heading {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: rgb(21, 21, 21);
+}
+
+.about-description {
+  text-align: justify;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about-highlights {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.highlight-item {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.highlight-heading {
+  color: #2f63ff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.highlight-description {
+  color: #666;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: var(--primary-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: var(--whiteColor);
+  font-size: 18px;
+}
+
+.footer-links ul li a:hover {
+  color: var(--grayColor);
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  color: white;
+}
+
+.social-media-icons a {
+  margin: 1px auto;
+  width: 50px;
+  transition: all 0.4s;
+  transform: scale(1);
+  background-color: transparent;
+  background-color: transparent;
+}
+
+.social-media-icons a i {
+  font-size: 28px;
+  color: var(--whiteColor);
+}
+
+.social-media-icons a i:hover {
+  box-shadow: 0px 0px 10px var(--whiteColor);
+  border-radius: 50%;
+  transform: scale(1.1);
+  border: none;
+}
+
+.copyright-text {
+  color: var(--grayColor);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px;
 }

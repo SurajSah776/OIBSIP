@@ -4,26 +4,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Business Name</title>
+    <title>Landing Page</title>
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome Link (For Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <!-- Header Section -->
     <div class="header">
-        <span>Online Store</span>
+        <span><a href="./index.html">Fashion Vibes</a></span>
 
         <ul>
-            <li> <a href="#home">Home</a></li>
+            <li> <a href="./index.html">Home</a></li>
             <li> <a href="#products">Products</a></li>
-            <li> <a href="#About">About Us</a></li>
             <li> <a href="#contact">Contact Us</a></li>
             <li> <a href="#faqs">FAQs</a></li>
-            <li> <a href="#signin">Signin</a></li>
+            <li> <a href="#about">About Us</a></li>
             <li> <a href="#signup">Signup</a></li>
+            <li> <a href="#signin">Signin</a></li>
         </ul>
     </div>
 
+
+
+    <!-- About Us Section -->
+    <div class="about-section" id="about">
+        <h1 class="about-heading">
+            About Us
+        </h1>
+
+        <div class="about-container">
+            <p class="about-description">
+                Welcome to Fashion Vibes, where we are passionate about providing you with a unique and
+                fashionable
+                online shopping experience. Our journey began with the vision of creating a platform that offers not
+                just
+                products but a lifestyle that we can create on our own by styling ourself.
+            </p>
+
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <h2 class="highlight-heading">Quality Products</h2>
+                    <p class="highlight-description">Discover a curated collection of high-quality clothing items that
+                        reflect the latest trends and timeless styles.</p>
+                </div>
+
+                <div class="highlight-item">
+                    <h2 class="highlight-heading">Customer Satisfaction</h2>
+                    <p class="highlight-description">Your satisfaction is our priority. We strive to provide excellent
+                        customer service, ensuring a seamless and enjoyable shopping journey.</p>
+                </div>
+
+                <div class="highlight-item">
+                    <h2 class="highlight-heading">Fashion with Purpose</h2>
+                    <p class="highlight-description">More than just a clothing store, we believe in fashion with
+                        purpose.
+                        Our mission is to inspire confidence and empower individuals through the art of dressing well.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Signup Form -->
+    <div class="signup-section" id="signup">
+        <h1 class="signup-heading">
+            Signup
+        </h1>
+        <div class="signup-container">
+
+            <form class="signup-form">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="user-name" placeholder="Username">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="text" name="address" placeholder="Address">
+
+                <div class="btn-group">
+                    <button type="reset" class="clear-button">Clear</button>
+                    <button type="submit" class="submit-button">Signup</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+    <!-- Signin Form -->
+    <div class="signin-section" id="signin">
+        <h1 class="signin-heading">
+            Signin
+        </h1>
+        <div class="signin-container">
+
+            <form class="signin-form">
+                <input type="text" name="user-name" placeholder="Username">
+
+                <input type="password" name="password" placeholder="Password">
+
+                <div class="btn-group">
+                    <button type="reset" class="clear-button">Clear</button>
+                    <button type="submit" class="submit-button">Signin</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <!-- Contact Form -->
+    <div class="contact-section" id="contact">
+        <h1 class="contact-heading">
+            Contact Us
+        </h1>
+        <div class="contact-container">
+
+            <form class="contact-form">
+                <input type="text" name="user-name" placeholder="Your Name">
+
+                <input type="email" name="email" placeholder="Your Email">
+
+                <textarea name="message" placeholder="Your Message"></textarea>
+
+                <div class="btn-group">
+                    <button type="reset" class="clear-button">Clear</button>
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- FAQs Section -->
+    <div class="faq-section" id="faqs">
+        <h1 class="faq-heading">
+            Frequently Asked Questions (FAQs)
+        </h1>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="question">How can I track my order?</h3>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer" style="display: none;">Once your order is shipped, you will receive a tracking
+                    number and
+                    a link to track your order's status.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="question">What payment methods do you accept?</h3>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer" style="display: none;">We accept various payment methods, including credit cards,
+                    debit
+                    cards, and secure online payment gateways (Gpay, UPI).</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="question">Can I modify or cancel my order after placing it?</h3>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer" style="display: none;">Unfortunately, once an order is placed, it cannot be
+                    modified or
+                    canceled. Please review your order carefully before confirming.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="question">What is your return policy?</h3>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer" style="display: none;">We have a hassle-free return policy. If you're not
+                    satisfied with
+                    your purchase, you can return it within 30 days for a refund or exchange.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="question">Are there any shipping charges?</h3>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer" style="display: none;">Shipping is free on orders above a certain amount. For
+                    orders below
+                    that threshold, a nominal shipping fee will be applied.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="question"> How can I contact customer support?</h3>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer" style="display: none;">Our customer support team is available via email at
+                    support@onlinestore.com or through our contact form on the website. We strive to respond promptly.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer Section -->
+    <div class="footer-section">
+
+        <div class="footer-wrapper">
+            <div class="footer-links">
+                <ul>
+                    <li> <a href="./index.html">Home</a></li>
+                    <li> <a href="#products">Products</a></li>
+                    <li> <a href="#About">About Us</a></li>
+                    <li> <a href="#contact">Contact Us</a></li>
+                    <li> <a href="#faqs">FAQs</a></li>
+                    <li> <a href="#signin">Signin</a></li>
+                    <li> <a href="#signup">Signup</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/surajkr.sah.775" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/surajsah776" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/SurajSah776" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/suraj-kumar-sah/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://t.me/SurajSah3469" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://github.com/SurajSah776" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.snapchat.com/add/surajsah776" target="_blank">
+                    <i class="fab fa-snapchat"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <p class="copyright-text">&copy;Suraj Kumar Sah</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
 
 </body>
 
