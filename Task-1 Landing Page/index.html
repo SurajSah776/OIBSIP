@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Fashion Vibes</title>
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
     <!-- FontAwesome Link (For Icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 
 <body>
     <!-- Header Section -->
@@ -19,14 +20,337 @@
         <ul>
             <li> <a href="./index.html">Home</a></li>
             <li> <a href="#products">Products</a></li>
+            <li> <a href="#about">About Us</a></li>
             <li> <a href="#contact">Contact Us</a></li>
             <li> <a href="#faqs">FAQs</a></li>
-            <li> <a href="#about">About Us</a></li>
-            <li> <a href="#signup">Signup</a></li>
-            <li> <a href="#signin">Signin</a></li>
+            <a href="#signup">
+                <button class="button">Signup</button>
+            </a>
+            <a href="#signin">
+                <button class="button">Signin</button>
+            </a>
         </ul>
     </div>
 
+
+    <!-- Home Section -->
+    <div class="home-section" id="home">
+        <h1>Welcome to Fashion Vibes</h1>
+        <p>Discover the latest trends in women's fashion.</p>
+
+        <!-- Carousel -->
+        <div class="slide-container">
+            <div class="slide">
+                <img src="./assets/hoodie5.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+                <img src="./assets/jumpsuit8.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+                <img src="./assets/top5.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+                <img src="./assets/jumpsuit6.jpg" alt="" />
+            </div>
+
+            <span class="arrow prev" onclick="controller(-1)">&#10094;&#10094;</span>
+            <span class="arrow next" onclick="controller(1)">&#10095;&#10095;</span>
+        </div>
+
+
+        <!-- Call-to-Action Button -->
+        <div class="cta-button">
+            <a href="#products" class="button">Shop Now</a>
+        </div>
+
+    </div>
+
+
+    <!-- Products Section -->
+    <div class="product-section" id="products">
+
+        <div class="product-heading">Products</div>
+
+        <!-- Jumpsuits -->
+        <div class="jumpsuit-container">
+            <div class="jumpsuit-heading">Jumpsuits for Women</div>
+
+            <div class="jumpsuit-cards">
+                <div class="card">
+                    <img src="./assets/jumpsuit1.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Solid Women Jumpsuit</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;1099</div>
+                            <div class="last-price">&#8377;1299</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/jumpsuit2.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Fit and Flare Yellow Dress</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;599</div>
+                            <div class="last-price">&#8377;649</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/jumpsuit3.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Solid Women Jumpsuit</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;409</div>
+                            <div class="last-price">&#8377;499</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/jumpsuit4.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Floral Print Women Jumpsuit</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;799</div>
+                            <div class="last-price">&#8377;875</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/jumpsuit5.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Printed Women Jumpsuit</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;699</div>
+                            <div class="last-price">&#8377;749</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/jumpsuit6.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Floral Print Women Jumpsuit</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;599</div>
+                            <div class="last-price">&#8377;689</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/jumpsuit7.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Solid Women Jumpsuit</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;699</div>
+                            <div class="last-price">&#8377;749</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/jumpsuit8.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Fit and Flare Multicolor Dress</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;599</div>
+                            <div class="last-price">&#8377;649</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/jumpsuit9.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Fit and Flare Yellow Dress</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;599</div>
+                            <div class="last-price">&#8377;699</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Top -->
+        <div class="top-container">
+            <div class="top-heading">Tops for Women</div>
+
+            <div class="top-cards">
+                <div class="card">
+                    <img src="./assets/top1.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Casual Puff Sleeves Solid Women Purple Top</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;239</div>
+                            <div class="last-price">&#8377;345</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/top2.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Casual Puff Sleeves Solid Women Green Top</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;429</div>
+                            <div class="last-price">&#8377;559</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/jumpsuit3.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Cuffed Sleeves Solid Women Black Top</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;1149</div>
+                            <div class="last-price">&#8377;1399</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/top4.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Casual Regular Sleeves Solid Women Black Top</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;259</div>
+                            <div class="last-price">&#8377;429</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/top5.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Casual Puff Sleeves Embroidered Women Pink Top</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;804</div>
+                            <div class="last-price">&#8377;969</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/top6.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Casual Regular Sleeves Printed Women Pink Top</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;408</div>
+                            <div class="last-price">&#8377;549</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Hoodie -->
+        <div class="hoodie-container">
+            <div class="hoodie-heading">Hoodie for Women</div>
+
+            <div class="hoodie-cards">
+                <div class="card">
+                    <img src="./assets/hoodie1.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Full Sleeve Embroidered Hooded Sweatshirt</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;499</div>
+                            <div class="last-price">&#8377;599</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/hoodie2.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Full Sleeve Embroidered Hooded Sweatshirt</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;499</div>
+                            <div class="last-price">&#8377;549</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/hoodie3.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Full Sleeve Solid Hooded Sweatshirt</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;679</div>
+                            <div class="last-price">&#8377;849</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/hoodie4.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Full Sleeve Printed Hoodie</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;599</div>
+                            <div class="last-price">&#8377;649</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/hoodie5.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Full Sleeve Graphic Print Reversible Sweatshirt</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;529</div>
+                            <div class="last-price">&#8377;699</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/hoodie6.jpg" alt="">
+                    <div class="card-description">
+                        <h4>Full Sleeve Printed Hooded</h4>
+                        <div class="price-container">
+                            <div class="current-price">&#8377;483</div>
+                            <div class="last-price">&#8377;549</div>
+                        </div>
+                        <div class="size">S, M, L, XL, XXL</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
 
     <!-- About Us Section -->
@@ -70,29 +394,30 @@
     </div>
 
 
-
-    <!-- Signup Form -->
-    <div class="signup-section" id="signup">
-        <h1 class="signup-heading">
-            Signup
+    <!-- Contact Form -->
+    <div class="contact-section" id="contact">
+        <h1 class="contact-heading">
+            Contact Us
         </h1>
-        <div class="signup-container">
+        <div class="contact-container">
 
-            <form class="signup-form">
-                <input type="text" name="name" placeholder="Name">
-                <input type="text" name="user-name" placeholder="Username">
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
-                <input type="text" name="address" placeholder="Address">
+            <form class="contact-form">
+                <input type="text" name="user-name" placeholder="Your Name">
+
+                <input type="email" name="email" placeholder="Your Email">
+
+                <textarea name="message" placeholder="Your Message"></textarea>
 
                 <div class="btn-group">
                     <button type="reset" class="clear-button">Clear</button>
-                    <button type="submit" class="submit-button">Signup</button>
+                    <button type="submit" class="submit-button">Submit</button>
                 </div>
+
             </form>
 
         </div>
     </div>
+
 
 
     <!-- Signin Form -->
@@ -118,29 +443,30 @@
     </div>
 
 
-    <!-- Contact Form -->
-    <div class="contact-section" id="contact">
-        <h1 class="contact-heading">
-            Contact Us
+    <!-- Signup Form -->
+    <div class="signup-section" id="signup">
+        <h1 class="signup-heading">
+            Signup
         </h1>
-        <div class="contact-container">
+        <div class="signup-container">
 
-            <form class="contact-form">
-                <input type="text" name="user-name" placeholder="Your Name">
-
-                <input type="email" name="email" placeholder="Your Email">
-
-                <textarea name="message" placeholder="Your Message"></textarea>
+            <form class="signup-form">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="user-name" placeholder="Username">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="text" name="address" placeholder="Address">
 
                 <div class="btn-group">
                     <button type="reset" class="clear-button">Clear</button>
-                    <button type="submit" class="submit-button">Submit</button>
+                    <button type="submit" class="submit-button">Signup</button>
                 </div>
-
             </form>
 
         </div>
     </div>
+
+
 
     <!-- FAQs Section -->
     <div class="faq-section" id="faqs">
@@ -211,7 +537,6 @@
         </div>
 
     </div>
-
 
 
     <!-- Footer Section -->

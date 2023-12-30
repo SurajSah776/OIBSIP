@@ -10,8 +10,9 @@
 
 /* Global Variables */
 :root {
-  --primary-color: rgba(0, 24, 40, 0.92);
-  --secondary-color: rgba(0, 24, 40, 0.4);
+  --blue-color: #2f63ff;
+  --primary-color: rgba(0, 24, 40, 0.95);
+  --secondary-color: rgba(0, 24, 40, 0.5);
   --clear-button: red;
   --submit-button: green;
   --grayColor: gray;
@@ -37,7 +38,7 @@ body {
 }
 
 .header span a {
-  color: #2f63ff;
+  color: var(--blue-color);
   text-decoration: none;
 }
 
@@ -49,6 +50,7 @@ body {
 
 .header ul {
   display: flex;
+  align-items: center;
 }
 
 .header ul li {
@@ -69,46 +71,116 @@ body {
   cursor: pointer;
 }
 
-/*  */
-/* Section */
-section {
-  padding: 40px;
+.header ul > a {
+  padding: 0px 5px;
+}
+
+/* Products Section */
+.product-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  /*  */
+  gap: 2rem;
+}
+
+.jumpsuit-container,
+.top-container,
+.hoodie-container {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-container {
+  background-color: white;
+}
+
+.jumpsuit-heading,
+.top-heading,
+.hoodie-heading {
   text-align: center;
+  font-size: 23px;
+  letter-spacing: 1px;
+  padding: 10px 0px 5px;
+  color: var(--whiteColor);
+}
+.top-heading {
+  color: black;
 }
 
-h2 {
-  color: #333;
+.jumpsuit-cards,
+.top-cards,
+.hoodie-cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0px;
 }
 
-p {
-  color: #666;
-  font-size: 18px;
+.card {
+  border-radius: var(--borderRadius);
+  width: 280px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transform: scale(1);
+  /* box-shadow: 0px 0px px rgb(255, 255, 255); */
+  transition: all 0.2s;
+  overflow-x: hidden;
+  background-color: rgba(240, 240, 240, 0.85);
 }
 
-/* Add this CSS to your existing styles.css or create a new stylesheet */
-
-section {
-  padding: 40px;
-  text-align: center;
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px var(--grayColor);
+  border: none;
 }
 
-#services {
-  background-color: var(--whiteColor);
+.card img {
+  width: 100%;
+  height: 300px;
+  border-bottom: 0.1px solid black;
 }
 
-.service {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin: 20px 0;
-  text-align: left;
+.card-description {
+  width: 100%;
+  height: 100px;
+  padding: 2px;
 }
 
-.service h3 {
-  color: #333;
+.card-description h4 {
+  font-size: 17px;
+  color: rgb(36, 36, 36);
+  font-weight: 550;
+  padding: 5px 2px;
 }
 
-.service p {
-  color: #666;
+.price-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+  gap: 20px;
+}
+
+.current-price,
+.last-price {
+  font-size: 17px;
+}
+.last-price {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.size {
+  font-size: 15px;
+  padding: 2px;
 }
 
 /* Contact Us, Signin, Signup Section */
@@ -116,8 +188,10 @@ section {
 .signin-section,
 .signup-section,
 .faq-section,
-.about-section {
-  padding: 50px 5px;
+.about-section,
+.product-section,
+.home-section {
+  padding: 50px 0px;
 }
 
 .contact-section,
@@ -145,7 +219,8 @@ section {
 .signin-heading,
 .signup-heading,
 .faq-heading,
-.about-heading {
+.about-heading,
+.product-heading {
   text-align: center;
   font-size: 38px;
   font-weight: 500;
@@ -236,7 +311,7 @@ textarea {
 }
 
 .toggle-btn:hover {
-  background-color: #0055ff;
+  background-color: var(--blue-color);
 }
 
 .answer {
@@ -278,7 +353,7 @@ textarea {
 }
 
 .highlight-heading {
-  color: #2f63ff;
+  color: var(--blue-color);
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -360,4 +435,80 @@ textarea {
   font-size: 14px;
   text-align: center;
   letter-spacing: 1px;
+}
+
+/* Home Section */
+/* Add this CSS to style the home section */
+.home-section {
+  text-align: center;
+}
+
+.home-section h1 {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+
+.home-section p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  transform: scale(1);
+}
+
+.slide img {
+  width: 300px;
+  height: 330px;
+  transition: all 1.6s;
+}
+
+.arrow {
+  position: absolute;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 25px;
+  top: 40%;
+  color: black;
+}
+
+.arrow:hover {
+  color: var(--blue-color);
+  transform: scaleX(1.2);
+}
+
+.prev {
+  left: 10px;
+  transition: 0.2s ease;
+}
+
+.next {
+  right: 10px;
+  transition: 0.2s ease;
+}
+
+.cta-button {
+  margin-top: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: var(--blue-color);
+  color: var(--whiteColor);
+  border-radius: var(--borderRadius);
+  border: none;
+}
+
+.button:hover {
+  background-color: #0840e7;
 }
