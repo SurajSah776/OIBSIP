@@ -57,3 +57,10 @@ setTimeout(() => {
     document.querySelector('.prev').addEventListener('click', () => controller(-1));
     document.querySelector('.next').addEventListener('click', () => controller(1));
 }, 2500);
+
+
+// For the header -Hamburger Icon
+function toggleMenu() {
+    const navMenu = document.querySelector('.header ul');
+    navMenu.classList.toggle('show');
+}

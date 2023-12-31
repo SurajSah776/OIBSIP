@@ -1,0 +1,121 @@
+/* Header responsiveness */
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  .header ul {
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    display: none;
+  }
+
+  .header ul.show {
+    display: flex;
+  }
+
+  .header ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header span a {
+    color: var(--blue-color);
+    text-decoration: none;
+  }
+
+  .header span a:hover {
+    color: rgb(105, 123, 255);
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+  }
+
+  /* Card responsiveness */
+  .card {
+    width: 80%;
+  }
+
+  .product-section {
+    padding: 10px;
+  }
+
+  .card {
+    width: 200px;
+    height: 300px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    border-bottom: 0.1px solid black;
+  }
+
+  .card-description {
+    width: 100%;
+    height: 100px;
+  }
+
+  .card h4,
+  .current-price,
+  .last-price,
+  .size {
+    font-size: 13px;
+  }
+
+  .hamburger-icon {
+    color: white;
+    font-size: 10px;
+    padding: 2px;
+  }
+
+  /* Contact, Signin, Signup, FAQ, About, and Home Sections */
+  .contact-container,
+  .signin-container,
+  .signup-container,
+  .faq-container,
+  .about-container,
+  .product-section,
+  .home-section {
+    width: 90%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  /* Buttons */
+  .btn-group button {
+    width: 48%;
+  }
+
+  /* Footer Section */
+  .footer-links ul {
+    gap: 8px;
+    padding: 8px;
+    flex-wrap: wrap;
+  }
+  .footer-links ul li a {
+    text-decoration: none;
+    color: var(--whiteColor);
+    font-size: 14px;
+  }
+
+  .footer-links ul {
+    flex-direction: row;
+  }
+
+  .social-media-icons a {
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hamburger-icon {
+    display: none;
+  }
+}

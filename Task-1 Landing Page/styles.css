@@ -75,6 +75,81 @@ body {
   padding: 0px 5px;
 }
 
+/* Home Section */
+.home-section {
+  text-align: center;
+}
+
+.home-section h1 {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+
+.home-section p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  transform: scale(1);
+}
+
+.slide img {
+  width: 300px;
+  height: 330px;
+  transition: all 1.6s;
+}
+
+.arrow {
+  position: absolute;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 25px;
+  top: 40%;
+  color: black;
+}
+
+.arrow:hover {
+  color: var(--blue-color);
+  transform: scaleX(1.2);
+}
+
+.prev {
+  left: 10px;
+  transition: 0.2s ease;
+}
+
+.next {
+  right: 10px;
+  transition: 0.2s ease;
+}
+
+.cta-button {
+  margin-top: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: var(--blue-color);
+  color: var(--whiteColor);
+  border-radius: var(--borderRadius);
+  border: none;
+}
+
+.button:hover {
+  background-color: #0840e7;
+}
+
 /* Products Section */
 .product-section {
   display: flex;
@@ -435,80 +510,4 @@ textarea {
   font-size: 14px;
   text-align: center;
   letter-spacing: 1px;
-}
-
-/* Home Section */
-/* Add this CSS to style the home section */
-.home-section {
-  text-align: center;
-}
-
-.home-section h1 {
-  font-size: 30px;
-  margin: 10px 0px;
-}
-
-.home-section p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.slide-container {
-  position: relative;
-  width: 100%;
-}
-
-.slide {
-  display: none;
-  transform: scale(1);
-}
-
-.slide img {
-  width: 300px;
-  height: 330px;
-  transition: all 1.6s;
-}
-
-.arrow {
-  position: absolute;
-  border-radius: 2px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 25px;
-  top: 40%;
-  color: black;
-}
-
-.arrow:hover {
-  color: var(--blue-color);
-  transform: scaleX(1.2);
-}
-
-.prev {
-  left: 10px;
-  transition: 0.2s ease;
-}
-
-.next {
-  right: 10px;
-  transition: 0.2s ease;
-}
-
-.cta-button {
-  margin-top: 15px;
-}
-
-.button {
-  display: inline-block;
-  padding: 8px 15px;
-  font-size: 24px;
-  text-decoration: none;
-  background-color: var(--blue-color);
-  color: var(--whiteColor);
-  border-radius: var(--borderRadius);
-  border: none;
-}
-
-.button:hover {
-  background-color: #0840e7;
 }
